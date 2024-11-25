@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="new.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="register.php" method="POST">
+        <h2>Sign Up</h2>
+        
+        <!-- Username Input -->
+        <div class="input-group">
+          <input type="text" name="username" required>
+          <label for="">Username</label>
+        </div>
+        
+        <!-- Phone Number Input -->
+        <div class="input-group">
+          <input type="text" name="phone" required>
+          <label for="">Phone number</label>
+        </div>
+        
+        <!-- Email Input -->
+        <div class="input-group">
+          <input type="email" name="email" required>
+          <label for="">Email</label>
+        </div>
+        
+        <!-- Password Input -->
+        <div class="input-group">
+          <input type="password" name="password" required>
+          <label for="">Password</label>
+        </div>
+        <div class="input-group">
+          <input type="text" name="referral_code" placeholder="Optional">
+          <label for="">Referral Code (Optional)</label>
+        </div>
+        <!-- Terms Checkbox -->
+        <div class="remember">
+          <label><input type="checkbox" name="terms" required> I agree to the terms & conditions</label>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+        
+        <div class="signUp-link">
+          <p>Already have an account? <a href="loginy.php" class="signInBtn-link">Sign In</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
